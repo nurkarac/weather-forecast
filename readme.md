@@ -3,7 +3,7 @@
 
 An end-to-end Data Engineering & Machine Learning pipeline that extracts real-time weather data, trains a time-series forecasting model directly in the cloud, and serves a Context-Aware AI assistant using Large Language Models (LLMs).
 
-## 🚀 Project Overview
+## Project Overview
 This project demonstrates a modern, production-grade cloud-native data architecture. Instead of relying solely on static weather APIs, the system builds its own intelligence by:
 1. **Extracting** historical and live weather data using robust software practices.
 2. **Centralizing** and staging data seamlessly into a cloud data warehouse.
@@ -13,7 +13,7 @@ This project demonstrates a modern, production-grade cloud-native data architect
 ![alt text](image-1.png)
 ![alt text](image-3.png)
 ![alt text](image-2.png)
-## 🛠️ Tech Stack & MLOps Architecture
+## Tech Stack & MLOps Architecture
 
 - **Language:** Python 3.13
 - **Data Ingestion:** Open-Meteo API, `requests-cache`, `retry-requests` (Fault-Tolerant Ingestion)
@@ -27,14 +27,14 @@ This project demonstrates a modern, production-grade cloud-native data architect
 - `dashboard.py`: Connects to live and forecasted BigQuery tables, computes metrics, renders automated time-series visualizations, and wraps the live analytics into the Gemini LLM system prompt for localized, conversational reasoning.
 - `config.py`: Manages global environment constants, project tracking identifiers, and secure authentication placeholders.
 
-## 🧠 AI Assistant Demo Questions
+##  AI Assistant Demo Questions
 
 Once the dashboard is active, the grounded Gemini Assistant can be tested with context-driven queries such as:
 - "I am planning to go for a run tonight at 8 PM. Looking at the wind speed and temperature, is it a good idea?"
 - "Should I wear a thick coat tomorrow morning?"
 - "Is there a huge difference between the maximum and minimum forecast today?"
 ![alt text](image-4.png)
-## ⚙️ Setup & Installation
+##  Setup & Installation
 
 **1. Clone the repository:**
 ```bash
@@ -62,7 +62,7 @@ pip install -r requirements.txt
 * Generate a free API key via [Google AI Studio](https://aistudio.google.com/).
 * Open `dashboard.py` and insert your key into the `genai.configure(api_key="...")` block, or manage it securely using Streamlit Secrets.
 
-## 🏃‍♂️ Running the Pipeline
+##  Running the Pipeline
 
 Execute the data pipeline and application modules in the following engineering order:
 
